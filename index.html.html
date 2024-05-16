@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="icon" href="https://t.pimg.jp/097/227/466/1/97227466.jpg" />
+    <link href='https://fonts.googleapis.com/css?family=Ruda' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet'>
+    <style class="header">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            width: 100vw;
+        }
+
+        header {
+            height: 70px;
+            background-color: black;
+            font-family: ruda;
+            display: flex;
+            padding-top: 40px;
+        }
+
+        h1 {
+            padding-left: 60px;
+            font-size: 30px;
+            color: white;
+        }
+
+        nav {
+            padding-top: 5px;
+
+        }
+
+        a {
+            padding-left: 70px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        img {
+            width: 60px;
+            height: 40px;
+            padding-top: 0;
+        }
+
+        .hy {
+            padding-left: 40px;
+        }
+
+        .hyx {
+            padding-left: 100px;
+        }
+
+        .one {
+            padding-left: 120px;
+            padding-right: 20px;
+        }
+
+        .two {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .three {
+            padding-left: 20px;
+        }
+
+        @media screen and (max-width:1500px) {
+            header {
+                padding-left: 0px;
+            }
+
+            .one {
+                padding-left: 30px;
+            }
+        }
+
+        @media screen and (max-width:1420px) {
+            a {
+                padding-left: 30px;
+            }
+        }
+
+        @media screen and (max-width:1300px) {
+            header {
+                height: 150px;
+                display: block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+        }
+    </style>
+    <style class="main">
+        .container {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://s3-alpha-sig.figma.com/img/791f/9ca1/801cf713555ea70ba295e8de05e15650?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MesaBvRiyJI~34D-tqOx-BD1LJx3vKv2gUCKz6~SAZyNWRUo~7b9QxG~FcUFGJungrw064v~9nChSkJQEdkLwUerFO6Nw4TsMJmRdEdrPTw7o0PSt59mGAbWC2wl~D~ojfVzmuxbXvSu5jDNJkY9bxz8xq25Pell7Do5xJReaOFCzj1N-DiPy5psPtc2z93mxHK03VUcGkkvljWmtrpdbp9b-0VzZhwRE2r8vE~5JtJs1uXcd3qF1o6sEov1DNZXUEZkbcl8DkmY4y5G68xDrbGdCoYJypFFUA4HRIuOlYehELsZGDBajutmlciRfSvOW0MRbWg3-G73dxDIyrKCZQ__'), url('https://s3-alpha-sig.figma.com/img/e41c/fff8/a3fe6a728dd01a51c641fb628da05ddf?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Er0DWavaY6Ct-fYrfS2IdZdPc8KbtpJ71TImwk-F~2~VPB4MXLOop18Rpw33jLDOZPzKvA3rdJX0IgPk98fRHHl3N59e2vit2HK3bfrdRuQhkbkKVoBYclmUBW49tDHk3TiCyRRjuWeendr3qmjFTLtuzlhoqN9Vk6Nd3ixjLrK5~MFkMvI6J3mwg5Ij6SsSY5Flofjx~v-9LJaxAgyBJN~YknDQqmnlijrNc3EnlHF1woJYbsObwcj8cAwdbZKgP4ezNCdOdQUqZ6TUE0C27X3MpadD~gm-RHmvBwNdymTHw1UaaTZqKmPKE4ZMYToO6hralurVKOfKfR~vQDGtKw__');
+            width: 100vw;
+            height: 1000px;
+            color: #000000;
+            border: 1px solid black;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .h {
+            width: 600px;
+            height: 10px;
+            background-color: #B62828;
+            margin-left: 100px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            border: #B62828;
+        }
+
+        .mainhe {
+            width: 700px;
+            height: 200px;
+            justify-content: center;
+            padding-left: 50px;
+            margin-top: 70px;
+        }
+
+        .para {
+            width: 600px;
+            height: 300px;
+            margin-left: 110px;
+            letter-spacing: 3px;
+            line-height: 30px;
+        }
+    </style>
+    <Style class="aboutus">
+        .overall {
+            width: 100vw;
+            height: 3500px;
+            background-color: #000000;
+        }
+
+        .hw {
+            width: 500px;
+            height: 10px;
+            background-color: #B62828;
+            margin-top: 10px;
+            margin-left: 545px;
+            border: #B62828;
+        }
+
+        .aboutpara {
+            width: 700px;
+            height: 420px;
+            margin-top: 15px;
+            margin-left: 70px;
+        }
+
+        .hp {
+            width: 500px;
+            height: 4px;
+            border: #B62828;
+            background-color: #B62828;
+            margin-top: 80px;
+            margin-left: 70px;
+        }
+
+        .aboutcont {
+            display: flex;
+        }
+    </Style>
+    <style class="menu">
+        .hx {
+            width: 470px;
+            height: 9px;
+            background-color: #B62828;
+            margin-top: 10px;
+            margin-left: 560px;
+            border: #B62828;
+        }
+
+        .menup {
+            font-family: ruda;
+            font-size: 20px;
+            color: white;
+            line-height: 40px;
+        }
+
+        .menuh {
+            font-family: ruda;
+            color: #F2C94C;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menudiv {
+            height: 170px;
+            width: 300px;
+            padding-left: 30px;
+        }
+
+        .menuover {
+            display: flex;
+        }
+
+        .menuover>img {
+            width: 280px;
+            height: 200px;
+        }
+
+        #lefte {
+            margin-left: 60px;
+            padding-left: 10px;
+        }
+
+        #leftf {
+            margin-left: 60px;
+            padding-left: 10px;
+        }
+
+        #leftg {
+            margin-left: 60px;
+            padding-left: 10px;
+        }
+
+        #righte {
+            margin-right: 80px;
+        }
+
+        #rightf {
+            margin-right: 80px;
+        }
+
+        #rightg {
+            margin-right: 80px;
+        }
+
+        .leftright {
+            margin-top: 50px;
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+    <style class="carousel">
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <style class="gallary">
+        .hz {
+            width: 440px;
+            height: 9px;
+            background-color: #B62828;
+            margin-top: 15px;
+            margin-left: 580px;
+            border: #B62828;
+        }
+
+        .gal {
+            width: 1319px;
+            height: 620px;
+            padding-top: 66px;
+            padding-left: 90px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <header>
+            <h1><b>Pizza Restaurant</b></h1>
+            <nav>
+                <a href="#" class="hyx">ABOUT US</a>
+                <a href="#" class="hy">MENU</a>
+                <a href="#" class="hy">BLOGS</a>
+                <a href="#" class="hy">TESTIMONY</a>
+                <a href="#" class="hy">FIND US</a>
+                <a href="#" class="hy">OUR TEAM</a>
+            </nav>
+            <img src="https://s3-alpha-sig.figma.com/img/47ae/6f29/45a8c3af9e6f0fc81f8f6bf84f1a3c81?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R6U~limZVAoqTBKxtIDZPEuTMmBe~OMFCNNtHRJKgcSeOn5bgOBZf6EO~nKRSFSyczTrIIBC2H4phbD~wH3KCWDyv2lsNA6RBZtjsiGgnZeR9Orv0Ma3Vo2He40VqyFAiznA1AruuWdCHuSK8zOJ99YjIyfIYQRtukaovTcg3smi~bkvS4iGHEfZhSQSflbpjmTaYXx-ffCzmKcuvP1ldAHxspo9WcmLxlp7-WgrFWwWWY2q6nwR53NAB3ud~sL5gFPmWZ85sECduyOTY5oCGOyaOYt5fMjgqIWVK2bfpAVZ4PHulMd2m0bAtpDSJ0Cp0DlIJ5qRrofpbkmGqkHzvg"
+                class="one">
+            <img src="https://s3-alpha-sig.figma.com/img/53a5/ed83/4f69a5bada89e9d1233bb62b9bb2c82f?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pyGR1Ui~6S6FibFCve4XiwWtuyGD18lrApnC9xpl9RjBgFeo2Yv81OkXUZ0cJ-PzKVV73Tc71Z9cEw-NvJOS6PMvUFahnadFF7Ypy5Mc1Vgtzb1LlyWXnyWAp6UnDKJyUWwD1vrps2mhCE6muk70zORcFdXahtlIBOhLU-Hsw-Da-i-ozEeJbCZZ1HL0CjloFk3ia~cblsO5VFRB5aiYnmP1GQJZ1Xjr3Ro6OzAsvbhGy19qfFbhEabVMYgVP~ehOSV2se-l2OVaeYZ5Hn1kDw7fMfdSjLfl6Vg2VIdfvzjSRUvghuDR-HC6PPNyowunvNGLyAiHM5-FGY433Cs9YA"
+                class="two">
+            <img src="https://s3-alpha-sig.figma.com/img/2bae/a732/3ebbd1e838f6c13b0d9b368faa94fe47?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k1t7OP~TaORHcgrrwS5-c39m3NEFoinOe34FQZx7sgQO0Po5IxufofPBT4O9o3g9-tZlXqIUbWBY13eThm2w09P-Bnls1qc7D3bCtUnLykxBIJYaHD7CfDkSyDmqfVlZ588dXNv7ZPvSGkUz-ZfUteLgDzhHJQXpViLAW4rsrpbJEtw82IaNh5X9SC-1oiX5mo7qKO~j9TSpzT8TethOYSamW1SrEL4AA9L8z8Gh5PYSEtEx16wr5FQMwie~ZSJV0Qo7PVRFdNUjxMdcWllDLuUjSq09uI992A1bnmugVT9A06jxRF2Ejb2XxyjxqI3MbnjKZez02ieuHC7pFS2HCA"
+                class="three">
+        </header>
+    </div>
+    <main class="main">
+        <div class="container">
+            <div class="mainhe">
+                <h1 style="font-family: Quattrocento; font-size: 90px;color: white;letter-spacing: 7px;">Craving for a
+                    chessy pizza?</h1>
+            </div>
+            <hr class="h">
+            <div class="para">
+                <p style="font-family: ruda; font-size: 22px;color: white;">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Assumenda dolore porro voluptatum maiores at? Quidem accusamus quibusdam pariatur
+                    adipisci, ullam eligendi deserunt fugit nobis nisi velit in sequi dolorum unde debitis, qui
+                    doloremque. Tempora eos beatae sequi incidunt, impedit delectus. Ut sapiente animi, autem cupiditate
+                    dolorem nulla asperiores optio est sed soluta possimus quaerat accusamus corrupti reprehenderit
+                </p>
+            </div>
+        </div>
+        <div class="overall">
+            <div style="padding-top: 50px;">
+                <h1
+                    style="font-family: Quattrocento; font-size: 60px;color: white;letter-spacing: 7px; text-align:center;">
+                    ABOUT US</h1>
+                <hr class="hw">
+            </div>
+            <hr class="hp">
+            <div class="aboutcont">
+                <div class="aboutpara">
+                    <p style="font-family: ruda; font-size: 22px;color: white;line-height: 40px;">Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap into electronic typesetting, remaining essentially unchanged. Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. At aperiam dicta exercitationem, vero praesentium quibusdam
+                        corporis ducimus natus et, laborum iure dolorum deserunt nihil voluptatibus.</p>
+                </div>
+                <img src="https://s3-alpha-sig.figma.com/img/61f3/73e6/eaa20689ed324f232d971ee5e95f354f?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kMIE~RMfJnOTt6aRpYxT~ebgFKQZIBNVOEFAN04jTYr15cbrYC7aED8qapMu8z81N0V1GsgB0C~BtQy42vrXO6N-lO0Q90w997YALtlE08g5gbTm~hz1XBX9yjZ8id1ZhV3dgIIPyhd9aqqXxMKwBo2HdsQB6A-SgqsYAAd63ZZvVBiAwYKpd2zICfCchSScv~5Xmn7nShoUPhvSYf6BnoxSDWQMWF0lihm1IA~cw3jS5a~qZunBWB9PgWo9E0vwNMKB9p56LE8iYbd6TQzGriXZ5zYoPtULyOdDcUnmGv2OqNTvIKfS14WzkTajMlF4X7n9LgM02hcHgdeMvV0ZmQ__"
+                    style="width:600px;height:450px;margin-left: 70px;">
+            </div>
+            <div class="menu" style="margin-top: 30px;">
+                <div style="padding-top: 50px;">
+                    <h1
+                        style="font-family: Quattrocento; font-size: 60px;color: white;letter-spacing: 7px; text-align:center;">
+                        MENU</h1>
+                    <hr class="hx">
+                </div>
+                <div class-="para" style="width:1220px;height:150px;margin-top: 50px; margin-left: 180px;">
+                    <p style="font-family: ruda; font-size: 25px;color: white;line-height: 40px;">Explore the wide range
+                        of pizza baked in fresh dough and vegetables. Our pizza will tempt all your excitement and
+                        senses. Made with a delicate balance of everything cheesy and spicy, you will get to savour the
+                        best pizza in town.</p>
+                </div>
+                <div class="">
+                    <div class="leftright">
+                        <div class="menuover" id="lefte" style="float: left;width:600px;">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/c6ef/4438/3e685beae728d1d4de3d5b0aa1ad09ab?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wq-dVHn1tiqlO9IOoh~XWUH~xIhNDas5rI3n-7eiVhf5K~IU0X~fkULfVsF~OkNlpHP1zqVfv8eQpWAu~07Dm1FaKsOjHEeSeys9d9cC4evit4vrwojBSTA3e5Laee1IN5nNEvYkYebXmC8c7UF1O1jQi8Di1CbBgTlyfrk899ib68nEqyNK-YbjumRb76qJs1aWiDNKDkAq3~IjS8zjVxmFR8pV3L3nPG9gPljaI9Zo2OYxriYthAPkKV738iiYCNxvdpcdrErZ70HWL9ZVOb-L3-5tgr58xpFAAtGu8Fvi8IqeCmQfLa5PNSKQ7Q3CmKCuDlYnejxDTek6UyNB8g__">
+                            <div class="menudiv">
+                                <h1 class="menuh">LOREM IPSUM</h1>
+                                <p class="menup">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+                                    placerat dui.</p>
+                            </div>
+                        </div>
+                        <div class="menuover" id="righte" style="float: right; width:600px;">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/f7fb/8767/a32abae68702adcaa404f19e085bc570?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xpm6oCyzzCd0SKbC8ocu9Wok4CNxozdPZ2pC~Rsh2-I3o-yfinEfSsQBmIpg1Oz00eKwFC4erq-2FPSR1KiVeOBcjpfujr9l6Zjgx06XUCqUcRTpPgaLskMjQaz9hMY9zAussAc8ui9vmljKRsrCazl4EazZge~FDIi8ViAIxNvnniLF5GqH4vzVuCgWIjOiTwO5lsswenoBQvTL7-Nx669dufH3Bn-smCoywHD9sb0UvhP3R~nIlKXxFfzBO3-jENKZwWeGYZ7WKl~EbLq7cQfJbzmmxTbNqYXuEeaM5R5RsiXpcBQkuXRjsD6xyqpIaq74grC~3mbKMkWsb0aAoA__">
+                            <div class="menudiv">
+                                <h1 class="menuh">LOREM IPSUM</h1>
+                                <p class="menup">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+                                    placerat dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftright">
+                        <div class="menuover" id="leftf" style="float: left;width:600px;">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/dd1d/0286/abc1b2ba74a98c5e5650a30cb168d99d?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IYL1KSnBqPlnMYcj6xRE87u1HV5ryJVgnx2WVvXFeTiEubrg-2NVo1xTbz3Rz2CFqk2E9KJvtcR-b~iSzNY86ivk2GAYHJPzqotRmOST36mMjVijxbb-uaLFTUJdp2RBB3hPtRyyucaho3RiqLpPv1oMUCpwvx5UsyjQzDGVmh51hs~U7cDT9ybX6MTcixKvl567ko7DAoN88-kYRMWj0hAofdqeLrGQSKVAuKrXxZAKm7ea4-nGvfxRXn0BwpoJC8Ru1q7~AlPI-AEKeP-txUOljyE2Ed2bfaOboOeCzTV1LvM-T4gWmtEWVQhnfp3AgPVud7DdDUyPNSbXK4d5CQ__">
+                            <div class="menudiv">
+                                <h1 class="menuh">LOREM IPSUM</h1>
+                                <p class="menup">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+                                    placerat dui.</p>
+                            </div>
+                        </div>
+                        <div class="menuover" id="rightf" style="float: right; width:600px;">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/dd1d/0286/abc1b2ba74a98c5e5650a30cb168d99d?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IYL1KSnBqPlnMYcj6xRE87u1HV5ryJVgnx2WVvXFeTiEubrg-2NVo1xTbz3Rz2CFqk2E9KJvtcR-b~iSzNY86ivk2GAYHJPzqotRmOST36mMjVijxbb-uaLFTUJdp2RBB3hPtRyyucaho3RiqLpPv1oMUCpwvx5UsyjQzDGVmh51hs~U7cDT9ybX6MTcixKvl567ko7DAoN88-kYRMWj0hAofdqeLrGQSKVAuKrXxZAKm7ea4-nGvfxRXn0BwpoJC8Ru1q7~AlPI-AEKeP-txUOljyE2Ed2bfaOboOeCzTV1LvM-T4gWmtEWVQhnfp3AgPVud7DdDUyPNSbXK4d5CQ__">
+                            <div class="menudiv">
+                                <h1 class="menuh">LOREM IPSUM</h1>
+                                <p class="menup">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+                                    placerat dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftright">
+                        <div class="menuover" id="leftg" style="float: left;width:600px;">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/7485/7b89/34dcea3f42967f3a863a8e57e7dd6d9c?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GJ71hcQJKAP21xQSnftn26n7tF3eELMB1gN8TZy8SQCKV5bxUOaIznzQrABW39me54iuckEjx5s0~FveyeLzyd0VsmIe4Glk7cljI5hibDYVWPJK9FkCyfl0Fi4aAaiZ87f--xi6Pq1ltKLiaCkqlg3sdpvJHr7KCCA-MP3DbrB59FD-xznr7Z2B2sBi4UePkCx8zETJU~1gvmN0FGPcfihKgLI9CUsqLTF0n5TKy4iqT0l2uark0WV8HE0~3hwK3BTceR56x~2P6UPhqRv72fdSayUunKQ-40GA4eL6atC2Jhguv7uEJjazDkfYRX8K4RRmn~6YiCpM2kykfjjDyA__">
+                            <div class="menudiv">
+                                <h1 class="menuh">LOREM IPSUM</h1>
+                                <p class="menup">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+                                    placerat dui.</p>
+                            </div>
+                        </div>
+                        <div class="menuover" id="rightg" style="float: right; width:600px;">
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/e597/fa5f/5b1c4b1c5a1925d8a24ccdf59f2a9519?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=crAcYUHkNYz0tIG6qQTKm4GPz6GlrEThVomK3dh2NCLfUcWpORwDIHk7HrtC1Z4IQgGjtr61Faoxevrb6ZcCG~N1jtOLaPfAs1NaiRDjMAqe4XuY9-p4qq2UPSJSaWhJcCvhqTV3gACTEU8zJwb90ooOSRwMnlXepPNoAWMkfahjIBBPnFEhxFpZvXOVER7~eHMHDC1mdP1UOOeO1bTxd2SRlkzrjQ4k86j1-Mhp5dZdl52WKNXiTP4wUvOTBSbFPNTS1FYQNdpCYt0aoM6ON5Yi509bnwuDW9gkgemL2D76SyVSigwsbmGhhc0YTm5N5MDE-Zzr2702PO81dCnlCw__">
+                            <div class="menudiv">
+                                <h1 class="menuh">LOREM IPSUM</h1>
+                                <p class="menup">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+                                    placerat dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="gallary" style="padding-top: 50px; height:800px;">
+                <h1
+                    style="font-family: Quattrocento; font-size: 60px;color: white;letter-spacing: 7px; text-align:center;">
+                    Gallary
+                </h1>
+                <hr class="hz">
+                <div class="gal">
+                    <div class="box">
+                        <img src="https://s3-alpha-sig.figma.com/img/c6ef/4438/3e685beae728d1d4de3d5b0aa1ad09ab?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wq-dVHn1tiqlO9IOoh~XWUH~xIhNDas5rI3n-7eiVhf5K~IU0X~fkULfVsF~OkNlpHP1zqVfv8eQpWAu~07Dm1FaKsOjHEeSeys9d9cC4evit4vrwojBSTA3e5Laee1IN5nNEvYkYebXmC8c7UF1O1jQi8Di1CbBgTlyfrk899ib68nEqyNK-YbjumRb76qJs1aWiDNKDkAq3~IjS8zjVxmFR8pV3L3nPG9gPljaI9Zo2OYxriYthAPkKV738iiYCNxvdpcdrErZ70HWL9ZVOb-L3-5tgr58xpFAAtGu8Fvi8IqeCmQfLa5PNSKQ7Q3CmKCuDlYnejxDTek6UyNB8g__"
+                            style="width:780px;height: 620px;">
+                    </div>
+                    <div style="width:550px;height:600px; padding-left: 30px;">
+                        <img src="https://s3-alpha-sig.figma.com/img/f7fb/8767/a32abae68702adcaa404f19e085bc570?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xpm6oCyzzCd0SKbC8ocu9Wok4CNxozdPZ2pC~Rsh2-I3o-yfinEfSsQBmIpg1Oz00eKwFC4erq-2FPSR1KiVeOBcjpfujr9l6Zjgx06XUCqUcRTpPgaLskMjQaz9hMY9zAussAc8ui9vmljKRsrCazl4EazZge~FDIi8ViAIxNvnniLF5GqH4vzVuCgWIjOiTwO5lsswenoBQvTL7-Nx669dufH3Bn-smCoywHD9sb0UvhP3R~nIlKXxFfzBO3-jENKZwWeGYZ7WKl~EbLq7cQfJbzmmxTbNqYXuEeaM5R5RsiXpcBQkuXRjsD6xyqpIaq74grC~3mbKMkWsb0aAoA__"
+                            style="width:274px;height:200px;padding-bottom: 5px;">
+                        <img src="https://s3-alpha-sig.figma.com/img/7485/7b89/34dcea3f42967f3a863a8e57e7dd6d9c?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GJ71hcQJKAP21xQSnftn26n7tF3eELMB1gN8TZy8SQCKV5bxUOaIznzQrABW39me54iuckEjx5s0~FveyeLzyd0VsmIe4Glk7cljI5hibDYVWPJK9FkCyfl0Fi4aAaiZ87f--xi6Pq1ltKLiaCkqlg3sdpvJHr7KCCA-MP3DbrB59FD-xznr7Z2B2sBi4UePkCx8zETJU~1gvmN0FGPcfihKgLI9CUsqLTF0n5TKy4iqT0l2uark0WV8HE0~3hwK3BTceR56x~2P6UPhqRv72fdSayUunKQ-40GA4eL6atC2Jhguv7uEJjazDkfYRX8K4RRmn~6YiCpM2kykfjjDyA__"
+                            style="width:274px;height:200px;padding-bottom: 5px;">
+                        <img src="https://s3-alpha-sig.figma.com/img/dd1d/0286/abc1b2ba74a98c5e5650a30cb168d99d?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IYL1KSnBqPlnMYcj6xRE87u1HV5ryJVgnx2WVvXFeTiEubrg-2NVo1xTbz3Rz2CFqk2E9KJvtcR-b~iSzNY86ivk2GAYHJPzqotRmOST36mMjVijxbb-uaLFTUJdp2RBB3hPtRyyucaho3RiqLpPv1oMUCpwvx5UsyjQzDGVmh51hs~U7cDT9ybX6MTcixKvl567ko7DAoN88-kYRMWj0hAofdqeLrGQSKVAuKrXxZAKm7ea4-nGvfxRXn0BwpoJC8Ru1q7~AlPI-AEKeP-txUOljyE2Ed2bfaOboOeCzTV1LvM-T4gWmtEWVQhnfp3AgPVud7DdDUyPNSbXK4d5CQ__"
+                            style="width:274px;height:200px;">
+                    </div>
+                    <div style="padding-left: 30px;">
+                        <img src="https://s3-alpha-sig.figma.com/img/1668/5198/2617d81c6b9c909195d046d7bfe10c01?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DkLGrGcZq404~EgDHvE1IUduO5hEKDbMRFrU~DOJAZaZtWlzj0akB4BD1L2FWIm-RJHys8Hl74WfyCKrCuqWEUXAcRsaq7OgRtkf6Ve60sOjwR~5fAxdl6tR-TjUJVf~BMpaaNnzjIQAfCo8SmTx86CfAETafrs6vwrWjh~uktmh5kMSjEufnRqo5GVdrkGvyDD709mQVeqaxlB1~sfBEDE4F~POTD-4MvP47I-tryiwf~n1zIERjnvyg5CglE1ZWb6NKGjAYVkLypUBxhHEV7Dzaj~tTbVWm5yCGOUu0ZGWHBsP64uAo~xF84GCYLVwJygIVzVLQtgsDILhtSsVSA__"
+                            style="width:274px;height:303px;padding-bottom: 5px;">
+                        <img src="https://s3-alpha-sig.figma.com/img/e597/fa5f/5b1c4b1c5a1925d8a24ccdf59f2a9519?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=crAcYUHkNYz0tIG6qQTKm4GPz6GlrEThVomK3dh2NCLfUcWpORwDIHk7HrtC1Z4IQgGjtr61Faoxevrb6ZcCG~N1jtOLaPfAs1NaiRDjMAqe4XuY9-p4qq2UPSJSaWhJcCvhqTV3gACTEU8zJwb90ooOSRwMnlXepPNoAWMkfahjIBBPnFEhxFpZvXOVER7~eHMHDC1mdP1UOOeO1bTxd2SRlkzrjQ4k86j1-Mhp5dZdl52WKNXiTP4wUvOTBSbFPNTS1FYQNdpCYt0aoM6ON5Yi509bnwuDW9gkgemL2D76SyVSigwsbmGhhc0YTm5N5MDE-Zzr2702PO81dCnlCw__"
+                            style="width:274px;height:303px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="caro">
+                <h1
+                    style="font-family: Quattrocento; font-size: 60px;color: white;letter-spacing: 7px; text-align:center;padding-top: 20px;">
+                    Carousel</h1>
+                <hr class="hz">
+                <div id="includeconten"></div>
+            </div>
+            <div class="findus">
+                <div>
+                    <h1
+                        style="font-family: Quattrocento; font-size: 60px;color: white;letter-spacing: 7px; text-align:center;padding-top: 20px;">
+                        FIND US</h1>
+                    <hr class="hz">
+                </div>
+                <div style="width:600px; height:400px;float:left; padding-top: 80px; margin-left: 30px;">
+                    <div style="width:500px; height:181px; margin-top: 30px;margin-left: 70px;">
+                        <p style="font-family:ruda; size:25px;line-height:40px; color: white;letter-spacing: 2px;">Lorem
+                            Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text e.</p>
+                    </div>
+                    <div style="display: flex; margin-left:60px">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKDv4sjdGvbVDpYOAJEFeDPXP80oTB2ciCc-Fnhln6FA&s"
+                            style="margin-right: 30px;">
+                        <p style="font-family:ruda; size:25px;line-height:40px; color: white;letter-spacing: 2px;">
+                            Location XYZ, XYZ Colony, Delhi</p>
+                    </div>
+                    <div style="display: flex; margin-top:30px;margin-left:60px">
+                        <span>
+                            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzUtMjUtcC5wbmc.png"
+                                style="padding-top:20px;margin-right: 30px; ">
+                        </span>
+                        <span>
+                            <p style="font-family:ruda; size:25px;line-height:40px; color: white;letter-spacing: 2px;">
+                                123-456-789</p>
+                            <p style="font-family:ruda; size:25px;line-height:40px; color: white;letter-spacing: 2px;">
+                                987-654-321</p>
+                        </span>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <img src="https://s3-alpha-sig.figma.com/img/da43/56cc/f9ec251cf90c9926f419fcf9a639214e?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f3JwblGkqwhk8KTaoOBrj1Y5lSZfi-SWWdlaeLzoFt7GT0XeJPHsX-bMhrhw11zuOMU5CMSHSBm665~l4AzWOLf3FqAjYNhqX1ByKfS-PYyBkyz47wj58L697RQdTPzH1SukBitRgpS7nugVrlDxeOYga1DXaRknYyW-BrcNCR9wFBSJ0O0FhTSPCqubYQnamNptN3tFSotxFiZ0AVMz5JJi8B4TGfFlnezqncRvUcUT4218f-bx-WORntLHPu0ofSbTF1mkpxTCT3NAtRItL1gbvzhnUStDBLv6hOM1sxqcZJFhVeprtAbQwf5GqR9ol6q42L8ahrWkH44dmx1SQQ__"
+                        style="width:685px;height:440px; padding-left: 120px;padding-top:70px;">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="width:100vw;height:300px; background-color: #000000;">
+        <div style="float: left;">
+            <img src="https://cdn.vectorstock.com/i/500p/31/28/waiter-vector-413128.jpg" style="width:300px;height: 290px;padding-left: 60px; padding-top: 0px;">
+        </div>
+        <div style="float: right;;margin-right: 30px; margin-top: 70px;width: 500px;height: 200px;">
+            <div style="display: flex;">
+                <img src="https://t3.ftcdn.net/jpg/02/38/96/64/360_F_238966486_A5wEWiRNtuUm85Qxj5BM12hCDNrSS7yS.jpg" style="padding-right: 20px;">
+                <p style="font-family:ruda; size:25px;line-height:40px; color: white;letter-spacing: 2px;">mailid@gmail.com</p>
+            </div>
+            <div style="display: flex; margin-top:30px;">
+                <span>
+                    <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzUtMjUtcC5wbmc.png"
+                        style="padding-top:20px;margin-right: 30px; ">
+                </span>
+                <span>
+                    <p style="font-family:ruda; size:25px;line-height:40px; color: white;letter-spacing: 2px;">
+                        123-456-789</p>
+                    <p style="font-family:ruda; size:25px;line-height:40px; color: white;letter-spacing: 2px;">
+                        987-654-321</p>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
